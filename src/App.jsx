@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRef, useState } from 'react'
 import Card from './Card'
+import Nav from './components/Nav'
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
   }
   return (
     <>
+    <Nav/>
     <h1>Todo-App</h1>
     <form onSubmit={AddTodo}>
       <input type="text" placeholder='Enter Your Todo' ref={inpRef}/>
